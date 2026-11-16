@@ -7,7 +7,7 @@
 ## Claude 앱(채팅·Cowork)
 
 1. 사용자 지정 → 플러그인(Customize → Plugins)에서 «추가 → 마켓플레이스 추가»(Add marketplace)를 누릅니다.
-2. 저장소 칸에 `heeai-cloud/claude-plugin`을 넣습니다.
+2. 저장소 칸에 `heeai-cloud/heerim-diagram`을 넣습니다.
 3. 목록에 나온 heerim-diagram을 추가한 다음 커넥터(Connectors) 탭에서 «연결»을 누르고 희림 아이디로 로그인합니다.
 
 Claude를 회사 조직 계정으로 쓰면 조직 관리자가 커넥터 주소 `https://diagram.heeai.cloud/mcp`를 먼저 넣어 두어야 «연결»이 눌립니다.
@@ -15,7 +15,7 @@ Claude를 회사 조직 계정으로 쓰면 조직 관리자가 커넥터 주소
 ## Claude Code
 
 ```
-claude plugin install heerim-diagram --marketplace heeai-cloud/claude-plugin
+claude plugin install heerim-diagram --marketplace heeai-cloud/heerim-diagram
 ```
 
 설치한 다음 `/mcp`에서 heerim-diagram을 골라 로그인합니다.
