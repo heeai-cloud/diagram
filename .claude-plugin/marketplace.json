@@ -1,5 +1,5 @@
 {
-  "name": "diagrim",
+  "name": "diagram",
   "description": "희림 사내 대지분석 다이어그램(사이트 다이어그램 생성기) — Claude 플러그인",
   "owner": {
     "name": "HeeAI",
@@ -7,8 +7,8 @@
   },
   "plugins": [
     {
-      "name": "diagrim",
-      "source": "./plugins/diagrim",
+      "name": "diagram",
+      "source": "./plugins/diagram",
       "description": "주소와 반경으로 대지분석 다이어그램을 만들고 대화로 SVG를 고칩니다(희림 사내용)."
     }
   ]

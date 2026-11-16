@@ -7,22 +7,22 @@
 ## Claude 앱(채팅·Cowork)
 
 1. 사용자 지정 → 플러그인(Customize → Plugins)에서 «추가 → 마켓플레이스 추가»(Add marketplace)를 누릅니다.
-2. 저장소 칸에 `heeai-cloud/diagrim`을 넣습니다.
-3. 목록에 나온 diagrim을 추가한 다음 커넥터(Connectors) 탭에서 «연결»을 누르고 희림 아이디로 로그인합니다.
+2. 저장소 칸에 `heeai-cloud/diagram`을 넣습니다.
+3. 목록에 나온 diagram을 추가한 다음 커넥터(Connectors) 탭에서 «연결»을 누르고 희림 아이디로 로그인합니다.
 
 Claude를 회사 조직 계정으로 쓰면 조직 관리자가 커넥터 주소 `https://diagram.heeai.cloud/mcp`를 먼저 넣어 두어야 «연결»이 눌립니다.
 
 ## Claude Code
 
 ```
-claude plugin install diagrim --marketplace heeai-cloud/diagrim
+claude plugin install diagram --marketplace heeai-cloud/diagram
 ```
 
-설치한 다음 `/mcp`에서 diagrim을 골라 로그인합니다.
+설치한 다음 `/mcp`에서 diagram을 골라 로그인합니다.
 
 ## 쓰는 법
 
-- `/diagrim 강남역 반경 500m 건축물 용도` (Cowork는 `/diagrim:diagrim`, 채팅에서는 그냥 말해도 됩니다)
+- `/diagram 강남역 반경 500m 건축물 용도` (Cowork는 `/diagram:diagram`, 채팅에서는 그냥 말해도 됩니다)
 - 지역: 한국 전역, 두바이
 - 자세한 안내: https://diagram.heeai.cloud/claude/ (희림 아이디로 로그인해서 엽니다)
 

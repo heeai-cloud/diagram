@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "diagrim": {
+    "diagram": {
       "type": "http",
       "url": "https://diagram.heeai.cloud/mcp"
     }
