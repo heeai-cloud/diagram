@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "heerim-diagram": {
+    "diagrim": {
       "type": "http",
       "url": "https://diagram.heeai.cloud/mcp"
     }
