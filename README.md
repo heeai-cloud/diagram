@@ -23,6 +23,7 @@ claude plugin install diagram --marketplace heeai-cloud/diagram
 ## 쓰는 법
 
 - `/diagram 강남역 반경 500m 건축물 용도` (Cowork는 `/diagram:diagram`, 채팅에서는 그냥 말해도 됩니다)
+- `/diagram`만 입력하면 장소·반경·도판 종류를 고르는 첫 화면이 뜹니다(Claude 채팅·Cowork). Claude Code에서는 선택지 메뉴에서 고릅니다.
 - 지역: 한국 전역, 두바이
 - 도판 속 숫자(건물 수·용도별 연면적·구성비 등)는 화면 «상세»와 같은 표에서 계산하고, CSV로도 받습니다.
 - 자세한 안내: https://diagram.heeai.cloud/claude/ (희림 아이디로 로그인해서 엽니다)
