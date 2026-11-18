@@ -15,7 +15,6 @@ allowed-tools: Bash(curl:*), Bash(mkdir:*), mcp__ccd_view__show_pane
 - 희림 다이어그램 도구(`find_site`, `create_diagram` …)가 안 보이면 연결부터 안내한다. 커넥터 주소는 `https://diagram.heeai.cloud/mcp`이고, 연결할 때 heeai.cloud 로그인 화면(희림 아이디·비밀번호, 사내 도구 대문과 같은 아이디)이 뜬다. 이미 대문에 로그인된 브라우저면 «연결» 확인 화면만 나온다.
   - Claude Code: `/mcp` → diagram → Authenticate.
   - claude.ai·Cowork: 플러그인의 **커넥터(Connectors)** 탭에서 diagram «연결».
-  - ChatGPT 앱(데스크톱): 설정 → 플러그인 → diagram에서 희림 아이디로 로그인한다. 도구는 이 컴퓨터에서 도는 대화(«작업 위치» = «이 컴퓨터»·로컬에서 작업)에만 붙는다. 일반 채팅이나 «클라우드에서 작업»으로 도는 대화라서 도구가 안 보이면, 연결을 다시 하라고 하지 말고 새 대화의 «작업 위치»를 «이 컴퓨터»로 바꿔 다시 부탁하라고 안내한다. Windows용 앱은 로그인한 뒤에도 연결이 안 될 수 있다(앱 쪽 문제).
   - 회사 조직 계정으로 쓰는데 «연결»이 눌리지 않으면 조직 관리자(Owner)가 먼저 **조직 설정 → 커넥터(Organization settings → Connectors)**에서 `https://diagram.heeai.cloud/mcp`를 커스텀 커넥터로 추가해야 한다(플러그인을 넣어도 커넥터는 조직에 저절로 들어가지 않는다).
   - 설치 안내: https://diagram.heeai.cloud/claude/ (희림 아이디로 로그인해서 연다)
 - 도구가 «unauthorized»·401로 실패하면 연결이 풀린 것이다(heeai.cloud 비밀번호를 바꿨거나 관리자가 로그아웃시켰거나 연결을 해제한 경우). 같은 방법으로 다시 연결하라고 안내한다.
@@ -24,7 +23,6 @@ allowed-tools: Bash(curl:*), Bash(mkdir:*), mcp__ccd_view__show_pane
 - 요청이 비어 있으면(`/diagram`만 입력) 무엇을 만들지 고르게 한다.
   - 보기 창이 뜨는 앱(claude.ai 채팅·Cowork): `diagram_home`을 부른다. 장소·반경·도판 종류를 고르는 첫 화면 카드(도판 만들기·상세 표·내 도판)가 뜬다. 사용자가 카드에서 고르면 그 요청이 메시지로 오니 아래 순서대로 만든다. 답은 «아래 카드에서 고르거나 바로 말해 주세요» 한 줄만 쓴다.
   - Claude Code(터미널, 데스크톱 Code 탭): 보기 창이 안 보이므로 도구를 부르지 않고 AskUserQuestion 질문 하나로 고르게 한다. 선택지는 셋이다. 도판 만들기(«명동역 반경 800 m 건축물 용도 도판 만들어 줘»), 상세 표(«명동역 건축물 용도 도판의 용도별 연면적 알려 줘»), 내 도판(«내가 만든 도판 목록 보여 줘»). 도판 만들기나 상세 표를 고르면 장소를 묻는다. 반경·도판 종류를 말하지 않으면 800 m·건축물 용도로 만든다. AskUserQuestion을 쓸 수 없으면 같은 셋을 짧은 목록으로 보여 주고 묻는다.
-  - ChatGPT 앱(데스크톱): 보기 창이 뜨지 않고 AskUserQuestion도 없다. 도구를 부르지 않고 Claude Code와 같은 선택지를 번호 목록으로 보여 준 다음 사용자의 답을 기다린다.
   - 어느 쪽인지 모르겠으면 `diagram_home`을 부르고 결과의 `for_claude`를 따른다.
 1. `find_site`로 대지를 찾는다. `query`에는 주소·장소 이름만 넣고(반경은 빼고), 그 장소가 어느 나라인지 알면 `country`를 꼭 같이 넣는다 — 한국 `kr`, 두바이 `ae`. 다른 나라 장소여도 그 나라 코드를 넣는다(그리지 못한다는 안내가 온다).
    - 후보가 여럿이면 가장 맞는 것을 고르고, 애매하면 주소 두세 개를 보여 주고 묻는다.
