@@ -9,6 +9,6 @@ Claude 채팅·Cowork·Claude Code에서 희림 사내 «사이트 다이어그�
 - 상세 표: 도판 속 숫자(건물 수·용도별 연면적·구성비 등)는 화면 «상세»와 같은 표에서 계산하고, CSV로도 받습니다.
 - 주고받는 곳: diagram.heeai.cloud 한 곳입니다. 찾은 주소와 만든 도판은 희림 사내 서버에 저장됩니다. Claude Code에서는 도판 파일(SVG·PNG)과 상세 표(CSV)를 작업 폴더에 내려받을 때 curl을 씁니다.
 - 설치 안내: https://diagram.heeai.cloud/claude/ (희림 아이디로 로그인해서 엽니다)
-- ChatGPT 앱(데스크톱): 설정 → 플러그인 → «추가 → 마켓플레이스 추가»의 «출처»에 `heeai-cloud/diagram`(저장소 이름)을 넣고 설치합니다. 대화에서는 `@diagram` 뒤에 부탁할 내용을 적습니다.
+- ChatGPT 앱(데스크톱): 설정 → 플러그인 → «추가 → 마켓플레이스 추가»의 «출처»에 `heeai-cloud/diagram`(저장소 이름)을 넣고 설치합니다. 새 대화의 «작업 위치»를 «이 컴퓨터»(로컬에서 작업)로 고르고 `@diagram` 뒤에 부탁할 내용을 적습니다. 일반 채팅이나 «클라우드에서 작업»으로 도는 대화에는 도구가 붙지 않습니다.
 
 © HeeAI. All rights reserved.
