@@ -1,6 +1,6 @@
 {
   "name": "diagram",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "주소와 반경으로 대지분석 다이어그램을 만들고 대화로 SVG를 고칩니다(희림 사내용).",
   "author": {
     "name": "HeeAI",

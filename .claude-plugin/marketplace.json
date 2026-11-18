@@ -1,6 +1,6 @@
 {
   "name": "diagram",
-  "description": "희림 사내 대지분석 다이어그램(사이트 다이어그램 생성기) — Claude 플러그인",
+  "description": "희림 사내 대지분석 다이어그램(사이트 다이어그램 생성기) — ChatGPT·Claude 플러그인",
   "owner": {
     "name": "HeeAI",
     "url": "https://heeai.cloud"

@@ -1,4 +1,4 @@
-# 희림 다이어그램 for Claude
+# 희림 다이어그램 for ChatGPT & Claude
 
 Claude 채팅·Cowork·Claude Code에서 희림 사내 «사이트 다이어그램 생성기»의 대지분석 다이어그램을 주소와 반경으로 만들고 대화로 SVG를 고칩니다.
 
@@ -9,5 +9,6 @@ Claude 채팅·Cowork·Claude Code에서 희림 사내 «사이트 다이어그�
 - 상세 표: 도판 속 숫자(건물 수·용도별 연면적·구성비 등)는 화면 «상세»와 같은 표에서 계산하고, CSV로도 받습니다.
 - 주고받는 곳: diagram.heeai.cloud 한 곳입니다. 찾은 주소와 만든 도판은 희림 사내 서버에 저장됩니다. Claude Code에서는 도판 파일(SVG·PNG)과 상세 표(CSV)를 작업 폴더에 내려받을 때 curl을 씁니다.
 - 설치 안내: https://diagram.heeai.cloud/claude/ (희림 아이디로 로그인해서 엽니다)
+- ChatGPT 앱(데스크톱): 설정 → 플러그인 → «추가 → 마켓플레이스 추가»의 «출처»에 `heeai-cloud/diagram`(저장소 이름)을 넣고 설치합니다. 대화에서는 `@diagram` 뒤에 부탁할 내용을 적습니다.
 
 © HeeAI. All rights reserved.

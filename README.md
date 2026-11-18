@@ -1,6 +1,6 @@
-# 희림 다이어그램 for Claude
+# 희림 다이어그램 for ChatGPT & Claude
 
-희림 사내 «사이트 다이어그램 생성기»(diagram.heeai.cloud)를 Claude에서 쓰는 플러그인입니다. 장소와 반경을 말하면 대지분석 다이어그램을 그리고 대화로 SVG를 고칩니다.
+희림 사내 «사이트 다이어그램 생성기»(diagram.heeai.cloud)를 ChatGPT와 Claude에서 쓰는 플러그인입니다. 장소와 반경을 말하면 대지분석 다이어그램을 그리고 대화로 SVG를 고칩니다.
 
 로그인은 heeai.cloud 희림 아이디로 합니다. 희림 아이디가 없으면 쓸 수 없습니다.
 
@@ -20,6 +20,15 @@ claude plugin install diagram --marketplace heeai-cloud/diagram
 
 설치한 다음 `/mcp`에서 diagram을 골라 로그인합니다.
 
+## ChatGPT 앱(데스크톱)
+
+1. 설정 → 플러그인에서 «추가 → 마켓플레이스 추가»를 누릅니다.
+2. «출처»에 `heeai-cloud/diagram`(저장소 이름)을 넣고 «마켓플레이스 추가»를 누릅니다. Git ref와 Sparse 경로는 그대로 둡니다.
+3. «디렉터리 찾아보기»에서 플러그인(diagram)을 설치하고 희림 아이디로 로그인합니다.
+4. 로그인한 다음 새 대화를 열고 `@diagram` 뒤에 부탁할 내용을 적습니다.
+
+ChatGPT에서는 Claude 앱에서 뜨는 카드 화면이 뜨지 않습니다.
+
 ## 쓰는 법
 
 - `/diagram 강남역 반경 500m 건축물 용도` (Cowork는 `/diagram:diagram`, 채팅에서는 그냥 말해도 됩니다)
@@ -30,6 +39,6 @@ claude plugin install diagram --marketplace heeai-cloud/diagram
 
 ## 주고받는 곳
 
-diagram.heeai.cloud 한 곳입니다. 찾은 주소와 만든 도판은 희림 사내 서버에 저장되고 Claude 대화 내용은 받지 않습니다. Claude Code에서는 도판 파일(SVG·PNG)과 상세 표(CSV)를 작업 폴더에 내려받을 때 curl을 씁니다.
+diagram.heeai.cloud 한 곳입니다. 찾은 주소와 만든 도판은 희림 사내 서버에 저장되고 대화 내용은 받지 않습니다. Claude Code에서는 도판 파일(SVG·PNG)과 상세 표(CSV)를 작업 폴더에 내려받을 때 curl을 씁니다.
 
 © HeeAI. All rights reserved.
